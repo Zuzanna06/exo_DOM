@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemple de DOM</title>
+  </head>
+  <body>
+    <h1 id="titre">Titre de la page</h1>
+    <p>Un paragraphe</p>
+    <button id="bouton" onclick="changerTitre()">Cliquez ici</button>
+
+    <script>
+      function changerTitre() {
+        var titre = document.getElementById("titre");
+        titre.innerHTML = "Nouveau titre de la page";
+      }
+    </script>
+  </body>
+</html>
+
+
+<!--Dans cet exemple, nous avons une page web qui contient un titre (<h1>) 
+avec un identifiant (id) "titre", un paragraphe (<p>) et un bouton (<button>) 
+avec un identifiant "bouton".
+En utilisant JavaScript, nous avons ajouté une fonction changerTitre() 
+qui est déclenchée lorsqu'on clique sur le bouton. La fonction utilise la 
+méthode getElementById() pour accéder à l'élément avec l'identifiant "titre", 
+et la propriété innerHTML pour modifier son contenu en remplaçant l'ancien titre 
+par un nouveau titre.
+Ainsi, lorsque l'utilisateur clique sur le bouton, le texte du titre de la page 
+est modifié en "Nouveau titre de la page". Cela montre comment JavaScript 
+peut interagir avec le DOM pour modifier 
+le contenu d'une page web de manière dynamique.
+*/
+
+
